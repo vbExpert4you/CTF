@@ -1,0 +1,410 @@
+<html><head><script type="text/javascript" async="" src="Image%20Metadata%20Viewer_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-ZPSKvKG0WipeaRQyUewUQ0wMawOWTmw32n5nBKnR21FA4MBKHzMEW63JHSOUpp32"></script><script type="text/javascript">if ( top.location.href!= window.location.href ) top.location.href = window.location.href;</script>
+<script type="text/javascript">
+
+  var afpp  = new Array(); // auto-focus point position
+  var faces = new Array();
+
+  function update_faces()
+  {
+      for (i = 0; i < faces.length; i++)
+      {
+          var rec = faces[i];
+          var img  = document.getElementById(rec.img_id);
+          var face = document.getElementById(rec.div_id);
+
+          // for Panasonic
+          var black_bar_height = 0;
+
+          if (rec.expected_ratio)
+          {
+             black_bar_height = (img.height - (img.width * rec.expected_ratio))/2;
+             if (black_bar_height < 1)
+                black_bar_height = 0;
+          }
+
+          var x1 = Math.round(2 + 1 + rec.x1 * img.width  - 3                   );
+          var y1 = Math.round(black_bar_height + 2 + 1 + rec.y1 * (img.height - black_bar_height * 2) - 3);
+
+          var width;
+          var height;
+          if (rec.width) {
+              width  = rec.width  * img.width;
+              height = rec.height * (rec.height_factor_is_width ? img.width: img.height);
+          } else {
+              var x2 = Math.round(2 + 1 + rec.x2 * img.width  - 3                   );
+              var y2 = Math.round(black_bar_height + 2 + 1 + rec.y2 * (img.height - black_bar_height * 2) - 3);
+              width  = x2-x1
+              height = y2-y1
+          }
+
+          face.style.left   = x1     + "px";
+          face.style.top    = y1     + "px";
+          face.style.width  = width  + "px";
+          face.style.height = height + "px";
+      }
+  }
+
+  function update_af_point()
+  {
+     for (i = 0; i < afpp.length; i++)
+     {
+        var rec = afpp[i];
+        var img = document.getElementById(rec.img_id);
+        var div = document.getElementById(rec.div_id);
+        div.style.left = Math.round(2 + 1 + rec["x"] * img.width  - 3/2 - 2 ) + "px";
+        div.style.top  = Math.round(2 + 1 + rec["y"] * img.height - 3/2 - 2 ) + "px";
+     }
+  }
+
+  function update_img_markup()
+  {
+     update_faces();
+     update_af_point();
+  }
+
+  var FT1 = "click to hide";
+  var FT2 = "click to show";
+  function toggle_faces(obj)
+  {
+      var vis;
+      if (obj.innerHTML == FT1) {
+          obj.innerHTML = FT2;
+          vis = "hidden";
+      } else {
+          obj.innerHTML = FT1;
+          vis = "visible";
+      }
+
+    for (i = 0; i < faces.length; i++)
+    {
+        var rec = faces[i];
+        document.getElementById(rec.div_id).style.visibility = vis
+    }
+  }
+
+  function toggle_afpp(obj)
+  {
+      var vis;
+      if (obj.innerHTML == FT1) {
+          obj.innerHTML = FT2;
+          vis = "hidden";
+      } else {
+          obj.innerHTML = FT1;
+          vis = "visible";
+      }
+
+     for (i = 0; i < afpp.length; i++)
+     {
+        var rec = afpp[i];
+        document.getElementById(rec.div_id).style.visibility = vis
+     }
+  }
+
+  var image_deg    = new Array();
+  var image_scale  = new Array();
+  var image_factor = new Array();
+  var image_W      = new Array();
+  var image_H      = new Array();
+  var view_W       = new Array();
+  var view_H       = new Array();
+
+  function show_image(num, scale, force_width, force_height)
+  {
+      var image   = document.getElementById('I' + num + '_image');
+      var canvas  = document.getElementById('I' + num + '_canvas');
+      var percent = document.getElementById('I' + num + '_percent');
+      var area    = document.getElementById('I' + num + '_area');
+
+      if (scale == null) {
+          image_factor[num] = 1;
+          image.width       = view_W[num];
+          image.height      = view_H[num];
+      } else if (scale != 1) {
+          image_factor[num] *= scale;
+          image.width       *= scale;
+          image.height      *= scale;
+      }
+
+
+      if (typeof(canvas.getContext) == "function")
+      {
+          var context = canvas.getContext('2d');
+          var degrees = image_deg[num];
+
+          context.save(); 
+
+          switch(image_deg[num]) {
+              default :
+                canvas.style.display = 'none';
+                image.style.display = 'inline';
+                break;
+
+              case 90:
+                canvas.setAttribute('width',  image.height);
+                canvas.setAttribute('height', image.width);
+                context.rotate(90 * Math.PI / 180);
+                context.drawImage(image, 0, -image.height, image.width, image.height);
+                image.style.display = 'none';
+                canvas.style.display = 'inline';
+                break;
+
+              case 180:
+                canvas.setAttribute('width',  image.width);
+                canvas.setAttribute('height', image.height);
+                context.rotate(180 * Math.PI / 180);
+                context.drawImage(image, -image.width, -image.height, image.width, image.height);
+                image.style.display = 'none';
+                canvas.style.display = 'inline';
+                break;
+
+              case 270:
+                canvas.setAttribute('width', image.height);
+                canvas.setAttribute('height', image.width);
+                context.rotate(270 * Math.PI / 180);
+                context.drawImage(image, -image.width, 0, image.width, image.height);
+                image.style.display = 'none';
+                canvas.style.display = 'inline';
+                break;
+          }
+          context.restore();
+
+      }
+      else
+      {
+          switch(image_deg[num]) {
+              default:
+                    image.style.filter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation=0)';
+                    break;
+
+              case 90:
+                    image.style.filter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation=1)';
+                    break;
+
+              case 180:
+                    image.style.filter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation=2)';
+                    break;
+
+              case 270:
+                    image.style.filter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation=3)';
+                    break;
+          }
+      }
+
+      percent.innerHTML = Math.round(image_factor[num] * 100) + "%";
+      if (area && image_W[num] && image_H[num])
+      {
+          area.innerHTML = Math.round(image.width * image.height  / (image_W[num] * image_H[num]) * 100) + "%";
+      }
+      update_img_markup();
+  }
+
+  function zoom_image(num, dir)
+  {
+
+      if (dir > 0)
+         show_image(num, 1.25);
+      else
+         show_image(num,  .75);
+  }
+
+  function rotate_image(num, dir)
+  {
+      image_deg[num] += 90 * dir;
+      if ((image_deg[num] <= 0) || (image_deg[num] >= 360))
+          image_deg[num] = 0;
+
+      show_image(num, 1);
+  }
+
+  function Histogram(obj, file)
+  {
+      var url = location.pathname + "?h=" + file
+      obj.innerHTML = "<div class='histo'><img class='histo' src='" + url + "'/></div>";
+  }
+
+  function toggleframe(span, id, url1, url2)
+  {
+      var obj = document.getElementById(id);
+      if (obj.src == url1) {
+          obj.src =  url2;
+          span.innerHTML = "show raw frame";
+      } else {
+          obj.src =  url1;
+          span.innerHTML = "show composite frame";
+      }
+  }
+</script>
+
+
+<title>Jeffrey Friedl's Image Metadata Viewer</title>
+<meta name="Description" content="Online tool for viewing image Exif data (metadata embedded within images), such as camera setting used when taking a photographs, date and location information, and thumbnails.">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="publisher" href="https://plus.google.com/+JeffreyFriedl/">
+<link rel="author" href="https://plus.google.com/+JeffreyFriedl/">
+<style>
+table#basic td { border: solid 2px #AAA; border-left:none;  border-bottom: none }
+table#basic td:first-child   { border-left:   solid 2px #AAA }
+table#basic tr:last-child td { border-bottom: solid 2px #AAA }
+a:visited, a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+div.histo { background-color:#666; padding: 10px; width:256px }
+.nobr {
+  white-space: nowrap;
+}
+div.img_markup      { position: relative; width:0; height:0; overflow:visible }
+div.img_markup_item { position: absolute; z-index:2; overflow:visible }
+div.facename        { position:absolute; bottom:-25px; left:-0.5em; color:yellow; background-color:rgba(0,0,0,0.5); border: solid 1px #888; padding:0 3px; white-space:nowrap }
+div.face            { border: solid red 3px }
+div.afpp            { border: solid 2px green; width:3px; height:3px; background-color: white; padding:1px; }
+img.frame { overflow:visible; background-color: #888 }
+img.subframe { overflow:visible; background-color: #888; position: absolute; left: 0px; top:0px }
+</style>
+<script type="text/javascript">
+function cansubmit(){
+    document.getElementById('subbutton').disabled = false;
+    document.getElementById('subbutton').style.borderColor = '#F00';
+
+}
+window.onload = function() {
+   document.getElementById('subbutton').disabled = true;
+
+ };
+</script>
+
+<script src="Image%20Metadata%20Viewer_files/api.js"></script>
+</head>
+<body><div style="float:right;
+     background-color: #FDD;
+     border-right: 1px solid #EEE;
+     border-left: 1px solid #EEE;
+     border-bottom: 1px solid #EEE;
+     padding: 5px 5px 5px 5px">
+<center>
+
+<div style="margin-bottom:10px"><a href="http://regex.info/blog/" style="color:#008">Jeffrey&nbsp;Friedl's</a>&nbsp;Image&nbsp;Metadata&nbsp;Viewer
+<br><small>(<a href="http://regex.info/blog/other-writings/online-exif-image-data-viewer/">How to use</a>)</small></div>
+
+
+<table style="background-color: #FEE; border: solid 1px gray; margin-top: 5px" width="300">
+<tbody><tr><td>
+<font style="font-size: 90%">
+<b>Some of my other stuff</b>
+<br>
+<span style="white-space:nowrap">·&nbsp; <a href="http://regex.info/blog/">My Blog</a>&nbsp;</span>
+<span style="white-space:nowrap">·&nbsp; <a href="http://regex.info/blog/lightroom-goodies/">Lightroom plugins</a>&nbsp;</span>
+<span style="white-space:nowrap">·&nbsp; <a href="http://regex.info/blog/photostream/main.html#random">Pretty Photos</a></span>
+<span style="white-space:nowrap">·&nbsp; <a href="http://regex.info/blog/photo-tech/">“Photo Tech”</a>&nbsp;</span>
+</font></td></tr></tbody></table>
+
+</center></div>
+<h1>Jeffrey's Image Metadata Viewer</h1>
+
+
+<form style="border: 1px solid gray; padding: 5px" action="exif.cgi" method="post" enctype="multipart/form-data">
+<table><tbody><tr><td>
+
+
+<b>URL: </b><input name="imgurl" type="url" placeholder="URL of image on the web" size="40">
+<br>
+<i>or...</i><br>
+<b>File:</b> <input type="file" name="f" placeholder="local filename">
+</td><td>
+<div class="g-recaptcha" data-callback="cansubmit" data-sitekey="6LfyNg8UAAAAACnDAWS_wtQyWvDLohAdDoPcpkdU"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="Image%20Metadata%20Viewer_files/anchor.html" role="presentation" name="a-qzsiny9yh6sg" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+</td><td>
+<input style="font-size: 80%" type="submit" id="subbutton" value="View Image Data" disabled="disabled">
+</td>
+</tr></tbody></table>
+</form>
+
+
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_donations">
+    <input type="hidden" name="business" value="jfriedl@yahoo.com">
+    <input type="hidden" name="item_name" value="Gift">
+    <input type="hidden" name="no_shipping" value="1">
+    <input type="hidden" name="cn" value="Comment">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="tax" value="0">
+    <input type="hidden" name="lc" value="US">
+    <input type="hidden" name="bn" value="PP-DonationsBF">
+<p style="margin-top:30px; font-size:90%">This tool remains available so long as I can keep it free and the bandwidth doesn't cost me too much.
+A gift of thanks is always appreciated, but certainly not required.
+    <input style="display:inline" type="submit" value="Send a gift via PayPal">, or perhaps an Amazon gift certificate (to: <tt>jfriedl@yahoo.com</tt>), or perhaps send me some good karma by doing something kind for a stranger.</p>
+    </form>
+
+
+<p>If you have questions about this tool, please <a href="http://exif.regex.info/faq.html">see the FAQ</a>.</p>
+
+<p style="font-weight:bold; font-size:120%; margin-bottom:0px">Basic Image Information</p>
+<table style="width:600px; float:left; margin-top:0px" cellspacing="5" cellpadding="0" border="0"><tbody><tr valign="top"><td><table id="basic" xborder="0" cellspacing="0" cellpadding="4">
+<tbody><tr valign="baseline"><td style="border:none; padding-bottom:20px">Target&nbsp;file:</td><td style="border:none"><small>cat.jpg</small></td></tr>
+<tr valign="baseline"><td>Copyright:</td><td>PicoCTF</td></tr>
+<tr valign="baseline"><td>File:</td><td><b>2,560 × 1,598</b> JPEG (<b>4.1</b> megapixels)&nbsp;&nbsp;&nbsp;<br>878,136 bytes (0.84 megabytes)</td></tr>
+<tr valign="baseline"><td>Color Encoding:</td><td><div style="background-color:#EFEFEF; border:solid 1px gray; padding: 5px"><b>WARNING:</b> No color-space metadata and no embedded color profile: <b>Windows and Mac web browsers treat colors randomly</b>.<br>
+<div style="margin:5px 0 0 0; padding:2px 0 0 0; border-top: solid 1px black; font-size: 85%">Images for the web are most widely viewable when in the sRGB color space and with an embedded color profile.
+See my <a href="http://regex.info/blog/photo-tech/color-spaces-page1/">Introduction to Digital-Image Color Spaces</a> for more information.</div></div></td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+<script type="text/javascript">image_deg[1] = 0;
+ image_scale[1] = 0.17578125;
+ image_factor[1] = 1;
+ view_W[1]=2560;
+ view_H[1]=1598;
+ image_W[1]=2560;
+ image_H[1]=1598;
+</script>
+<table style="float:left; margin:3px; margin-bottom:20px; padding:3px; border: solid 3px #4B4"><tbody><tr><td>
+<img src="Image%20Metadata%20Viewer_files/rotate_cw.png" onclick="rotate_image(1,  1)">
+<img src="Image%20Metadata%20Viewer_files/zoom_smaller.png" onclick="zoom_image(1, -1)">
+<img src="Image%20Metadata%20Viewer_files/zoom_bigger.png" onclick="zoom_image(1,  1)">
+<img src="Image%20Metadata%20Viewer_files/one-to-one.png" onclick="show_image(1, null)">
+ Main JPG image displayed here at <span id="I1_percent">18%</span> width (<span id="I1_area"><sup><small>1</small></sup>/<sub><small>32</small></sub></span> the area of the original)
+<br>
+<a href="http://exif.regex.info/_tmp/data/96a7f666c0bf82891135e98c8c2e5bea.jpg"><img class="frame" id="I1_image" style="padding:1px" src="Image%20Metadata%20Viewer_files/96a7f666c0bf82891135e98c8c2e5bea.jpg" width="450" height="281" border="2"></a><canvas style="display:none; border:1px solid black" id="I1_canvas"></canvas>
+<div style="margin-top:5px"><span style="color:#888; font-size:small" onclick='Histogram(this, "/_tmp/data/96a7f666c0bf82891135e98c8c2e5bea.jpg")'>Click image to isolate; click this text to show histogram</span></div>
+</td></tr></tbody></table><br clear="all">
+<script type="text/javascript">update_img_markup();</script>
+<p></p><hr><p>Here's the full data:</p>
+<p style="margin-top:40px; margin-bottom:0"><b><big id="XMP">XMP</big></b></p><table style="margin-top:8px" cellspacing="0" cellpadding="4" border="1">
+<tbody><tr valign="top"><td>XMP&nbsp;Toolkit</td><td>Image::ExifTool 10.80</td></tr>
+<tr valign="top"><td>License</td><td>cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9</td></tr>
+<tr valign="top"><td>Rights</td><td>PicoCTF</td></tr>
+</tbody></table>
+<p style="margin-top:40px; margin-bottom:0"><b><big id="IPTC">IPTC</big></b></p><table style="margin-top:8px" cellspacing="0" cellpadding="4" border="1">
+<tbody><tr valign="top"><td>Copyright&nbsp;Notice</td><td>PicoCTF</td></tr>
+<tr valign="top"><td>Application&nbsp;Record&nbsp;Version</td><td>4</td></tr>
+</tbody></table>
+<p style="margin-top:40px; margin-bottom:0"><b><big id="JFIF">JFIF</big></b></p><table style="margin-top:8px" cellspacing="0" cellpadding="4" border="1">
+<tbody><tr valign="top"><td>JFIF&nbsp;Version</td><td>1.02</td></tr>
+<tr valign="top"><td>Resolution</td><td>1 pixels/None</td></tr>
+</tbody></table>
+<p style="margin-top:40px; margin-bottom:0"><b><big id="File">File</big></b> — basic information derived from the file.
+</p><table style="margin-top:8px" cellspacing="0" cellpadding="4" border="1">
+<tbody><tr valign="top"><td>File&nbsp;Type</td><td>JPEG</td></tr>
+<tr valign="top"><td>MIME&nbsp;Type</td><td>image/jpeg</td></tr>
+<tr valign="top"><td>Current&nbsp;IPTC&nbsp;Digest</td><td><tt><small>7a78f3d9cfb1ce42ab5a3aa30573d617</small></tt></td></tr>
+<tr valign="top"><td>Encoding&nbsp;Process</td><td>Baseline DCT, Huffman coding</td></tr>
+<tr valign="top"><td>Bits&nbsp;Per&nbsp;Sample</td><td>8</td></tr>
+<tr valign="top"><td>Color&nbsp;Components</td><td>3</td></tr>
+<tr valign="top"><td>File&nbsp;Size</td><td>858 kB</td></tr>
+<tr valign="top"><td>File&nbsp;Type&nbsp;Extension</td><td>jpg</td></tr>
+<tr valign="top"><td>Image&nbsp;Size</td><td>2,560 × 1,598</td></tr>
+<tr valign="top"><td>Y&nbsp;Cb&nbsp;Cr&nbsp;Sub Sampling</td><td>YCbCr4:2:0 (2 2)</td></tr>
+</tbody></table>
+<p style="margin-top:40px; margin-bottom:0"><b><big id="Composite">Composite</big></b><br>This
+ block of data is computed based upon other items. Some of it may be 
+wildly incorrect, especially if the image has been resized.
+</p><table style="margin-top:8px" cellspacing="0" cellpadding="4" border="1">
+<tbody><tr valign="top"><td>Megapixels</td><td>4.1</td></tr>
+</tbody></table>
+<p></p><hr><p><small>This application uses Phil Harvey's most excellent
+<a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">Image::ExifTool</a> library, version 11.11. Histograms created with <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a>. <br>Jeffrey last modifed this viewer on Feb 27, 2021.<br>Photos
+ and data viewed with this service are not shared with anyone else, nor 
+are they saved beyond the temporary period needed for the service to 
+function.</small></p>
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="Image%20Metadata%20Viewer_files/bframe.html" style="width: 100%; height: 100%;" name="c-qzsiny9yh6sg" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" frameborder="0"></iframe></div></div></body></html>
