@@ -1,0 +1,875 @@
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+%1$s
+Portfolio as of Tue May 11 08:33:55 UTC 2021
+
+
+3 shares of SNY
+6 shares of M
+12 shares of K
+9 shares of ZPF
+40 shares of TM
+45 shares of QTQA
+41 shares of O
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+Ø@ÈÚ˜@ΩÒ˜@¿ÿ˜`Ï÷˜FÖVÖ9ÿ˜ j˜ÜÖÄÖŸ˜`Tÿ˜∂Ö∆ÖpÍ‘˜0n”˜¿;ÿ˜p‘˜ÿ˜
+Portfolio as of Tue May 11 08:33:55 UTC 2021
+
+
+3 shares of SNY
+6 shares of M
+12 shares of K
+9 shares of ZPF
+40 shares of TM
+45 shares of QTQA
+41 shares of O
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+ô˜Ω`ˇˇˇâ–É¿âÖhˇˇˇÉÏˇµhˇˇˇË>˛ˇˇÉƒâÖlˇˇˇãÖTˇˇˇãPãÖlˇˇˇâPãÖTˇˇˇãïlˇˇˇâPãÖhˇˇˇ)Ö`ˇˇˇÉΩ`ˇˇˇ
+Portfolio as of Tue May 11 08:33:55 UTC 2021
+
+
+3 shares of SNY
+6 shares of M
+12 shares of K
+9 shares of ZPF
+40 shares of TM
+45 shares of QTQA
+41 shares of O
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+á(≠˚«=Ï˜«=Ï˜«=Ï˜«=Ï˜«=Ï˜«=Ï˜«=Ï˜»=Ï˜
+Portfolio as of Tue May 11 08:33:56 UTC 2021
+
+
+1 shares of TOR
+26 shares of CYP
+94 shares of M
+39 shares of FZQ
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+†
+Portfolio as of Tue May 11 08:33:56 UTC 2021
+
+
+1 shares of TOR
+26 shares of CYP
+94 shares of M
+39 shares of FZQ
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+
+Portfolio as of Tue May 11 08:33:56 UTC 2021
+
+
+1 shares of TOR
+26 shares of CYP
+94 shares of M
+39 shares of FZQ
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+
+êHÙ˜ˇˇˇˇˇˇˇˇ
+Portfolio as of Tue May 11 08:33:56 UTC 2021
+
+
+1 shares of TOR
+26 shares of CYP
+94 shares of M
+39 shares of FZQ
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+(null)
+Portfolio as of Tue May 11 08:33:56 UTC 2021
+
+
+1 shares of TOR
+26 shares of CYP
+94 shares of M
+39 shares of FZQ
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+ò$≠˚‡	‡	‡	‡	‡	‡	‡	‡	
+Portfolio as of Tue May 11 08:33:57 UTC 2021
+
+
+5 shares of H
+12 shares of VI
+27 shares of PX
+463 shares of GGAH
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+
+Portfolio as of Tue May 11 08:33:57 UTC 2021
+
+
+5 shares of H
+12 shares of VI
+27 shares of PX
+463 shares of GGAH
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+%14$s
+Portfolio as of Tue May 11 08:33:58 UTC 2021
+
+
+1 shares of YT
+3 shares of MSQ
+1 shares of Y
+2 shares of CJY
+2 shares of MLI
+58 shares of GX
+246 shares of RKQ
+2 shares of O
+245 shares of S
+480 shares of KYM
+182 shares of STFE
+168 shares of IU
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+
+Portfolio as of Tue May 11 08:34:01 UTC 2021
+
+
+1 shares of UQ
+1 shares of UB
+1 shares of TXS
+7 shares of RDOL
+10 shares of P
+10 shares of S
+197 shares of SZHF
+619 shares of VNRA
+417 shares of ZT
+702 shares of G
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+ú:˝˜
+Portfolio as of Tue May 11 08:34:01 UTC 2021
+
+
+1 shares of UQ
+1 shares of UB
+1 shares of TXS
+7 shares of RDOL
+10 shares of P
+10 shares of S
+197 shares of SZHF
+619 shares of VNRA
+417 shares of ZT
+702 shares of G
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+®Éii
+Portfolio as of Tue May 11 08:34:02 UTC 2021
+
+
+1 shares of X
+13 shares of HBZ
+59 shares of EXMS
+14 shares of PMG
+1572 shares of W
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+(null)
+Portfolio as of Tue May 11 08:34:02 UTC 2021
+
+
+1 shares of X
+13 shares of HBZ
+59 shares of EXMS
+14 shares of PMG
+1572 shares of W
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+Å¬$
+Portfolio as of Tue May 11 08:34:02 UTC 2021
+
+
+1 shares of X
+13 shares of HBZ
+59 shares of EXMS
+14 shares of PMG
+1572 shares of W
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+¿–ı˜ÿ’ı˜¿–ı˜
+Portfolio as of Tue May 11 08:34:02 UTC 2021
+
+
+1 shares of X
+13 shares of HBZ
+59 shares of EXMS
+14 shares of PMG
+1572 shares of W
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+à ≠˚w¡ö	x¡ö	p¡ö	p¡ö	p¡ö	p¡ö	p¡ö	p—ö	
+Portfolio as of Tue May 11 08:34:03 UTC 2021
+
+
+1 shares of MMT
+5 shares of D
+7 shares of XMMH
+24 shares of Y
+150 shares of ZRO
+50 shares of EYXF
+501 shares of DMHV
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+åM
+Portfolio as of Tue May 11 08:34:03 UTC 2021
+
+
+1 shares of MMT
+5 shares of D
+7 shares of XMMH
+24 shares of Y
+150 shares of ZRO
+50 shares of EYXF
+501 shares of DMHV
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+Ë◊≈ˇÜå`ë	‘◊≈ˇË◊≈ˇÈã¸„Ï˜
+Portfolio as of Tue May 11 08:34:03 UTC 2021
+
+
+1 shares of MMT
+5 shares of D
+7 shares of XMMH
+24 shares of Y
+150 shares of ZRO
+50 shares of EYXF
+501 shares of DMHV
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+ÉƒÉf<Î˜
+Portfolio as of Tue May 11 08:34:03 UTC 2021
+
+
+1 shares of MMT
+5 shares of D
+7 shares of XMMH
+24 shares of Y
+150 shares of ZRO
+50 shares of EYXF
+501 shares of DMHV
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+à ≠˚w¡À	x¡À	p¡À	p¡À	p¡À	p¡À	p¡À	p—À	
+Portfolio as of Tue May 11 08:34:03 UTC 2021
+
+
+1 shares of MMT
+5 shares of D
+7 shares of XMMH
+24 shares of Y
+150 shares of ZRO
+50 shares of EYXF
+501 shares of DMHV
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+%d
+Portfolio as of Tue May 11 08:34:03 UTC 2021
+
+
+1 shares of MMT
+5 shares of D
+7 shares of XMMH
+24 shares of Y
+150 shares of ZRO
+50 shares of EYXF
+501 shares of DMHV
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+‰»§ˇ¯»§ˇÈã¸ˆ˜
+Portfolio as of Tue May 11 08:34:03 UTC 2021
+
+
+1 shares of MMT
+5 shares of D
+7 shares of XMMH
+24 shares of Y
+150 shares of ZRO
+50 shares of EYXF
+501 shares of DMHV
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+(null)
+Portfolio as of Tue May 11 08:34:03 UTC 2021
+
+
+1 shares of MMT
+5 shares of D
+7 shares of XMMH
+24 shares of Y
+150 shares of ZRO
+50 shares of EYXF
+501 shares of DMHV
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+Å«˜Ä
+Portfolio as of Tue May 11 08:34:03 UTC 2021
+
+
+1 shares of MMT
+5 shares of D
+7 shares of XMMH
+24 shares of Y
+150 shares of ZRO
+50 shares of EYXF
+501 shares of DMHV
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+Ø@˘˘˜@Õ¯˜@–ﬂ˜`¸›˜FÖVÖIﬂ˜ z˜˜ÜÖÄï‡˜`dﬂ˜∂Ö∆Öp˙€˜0~⁄˜¿Kﬂ˜p
+Portfolio as of Tue May 11 08:34:04 UTC 2021
+
+
+2 shares of B
+1 shares of IV
+2 shares of JEGA
+285 shares of VE
+119 shares of OL
+22 shares of BX
+42 shares of AC
+1096 shares of GGVF
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+åM
+Portfolio as of Tue May 11 08:34:04 UTC 2021
+
+
+2 shares of B
+1 shares of IV
+2 shares of JEGA
+285 shares of VE
+119 shares of OL
+22 shares of BX
+42 shares of AC
+1096 shares of GGVF
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+¿¸˜
+Portfolio as of Tue May 11 08:34:05 UTC 2021
+
+
+1 shares of XALL
+1 shares of XI
+4 shares of HYW
+10 shares of TBJ
+1 shares of XI
+65 shares of AX
+425 shares of X
+932 shares of MWM
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+
+Portfolio as of Tue May 11 08:34:06 UTC 2021
+
+
+1 shares of T
+49 shares of VF
+11 shares of I
+65 shares of BEOI
+81 shares of CD
+268 shares of TETQ
+667 shares of BZES
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+Zã$â$ãD$¬
+Portfolio as of Tue May 11 08:34:06 UTC 2021
+
+
+1 shares of T
+49 shares of VF
+11 shares of I
+65 shares of BEOI
+81 shares of CD
+268 shares of TETQ
+667 shares of BZES
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+
+Portfolio as of Tue May 11 08:34:06 UTC 2021
+
+
+1 shares of T
+49 shares of VF
+11 shares of I
+65 shares of BEOI
+81 shares of CD
+268 shares of TETQ
+667 shares of BZES
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+timeout: the monitored command dumped core
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+åM
+Portfolio as of Tue May 11 08:34:07 UTC 2021
+
+
+1 shares of U
+1 shares of GXTM
+10 shares of NJ
+24 shares of ZC
+28 shares of QZ
+182 shares of FFC
+62 shares of AN
+379 shares of GS
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+Ø@â˚˜@]˙˜@`·˜`åﬂ˜FÖVÖŸ‡˜ 
+˘˜ÜÖÄ%‚˜`Ù‡˜∂Ö∆Öpä›˜0‹˜¿€‡˜pê›˜µ‡˜
+Portfolio as of Tue May 11 08:34:07 UTC 2021
+
+
+1 shares of U
+1 shares of GXTM
+10 shares of NJ
+24 shares of ZC
+28 shares of QZ
+182 shares of FFC
+62 shares of AN
+379 shares of GS
+Goodbye!
+Welcome back to the trading app!
+
+What would you like to do?
+1) Buy some stonks!
+2) View my portfolio
+Using patented AI algorithms to buy stonks
+Stonks chosen
+What is your API token?
+Buying stonks with token:
+
+Portfolio as of Tue May 11 08:34:07 UTC 2021
+
+
+1 shares of U
+1 shares of GXTM
+10 shares of NJ
+24 shares of ZC
+28 shares of QZ
+182 shares of FFC
+62 shares of AN
+379 shares of GS
+Goodbye!
